@@ -29,13 +29,15 @@
 .monaco-inputbox,
 .action-list-filter-input,
 .scm-editor,
-.agent-status-pill {
+.agent-status-pill,
+.editor-widget.suggest-widget .monaco-list-rows .monaco-list-row {
   border-radius: 100px !important;
 }
 
 .notification-toast {
   border-radius: 10px !important;
 }
+
 .notifications-list-container .monaco-list-rows,
 .notifications-list-container .notification-list-item,
 .notifications-list-container .monaco-list-row {
@@ -195,6 +197,37 @@
 }
 
 .vs-dark .tab.active .tab-fill {
+  border: 1px solid color-mix(in srgb,
+      var(--modern-ui-editor-tab-unfocused-active-hover-background) 80%,
+      var(--vscode-foreground)) !important;
+}
+
+.editor-widget.suggest-widget {
+  border-radius: 20px !important;
+}
+
+
+.monaco-editor .focused .selected-text {
+  border-radius: 20px !important;
+  border: 1px solid color-mix(in srgb,
+      var(--modern-ui-editor-tab-unfocused-active-hover-background) 50%,
+      var(--vscode-foreground)) !important;
+}
+
+.monaco-editor .selectionHighlight ,
+.monaco-editor .wordHighlight,
+.monaco-editor .wordHighlightStrong,
+.monaco-editor .wordHighlightText {
+  background-color: transparent !important;
+  border-radius: 100px !important;
+  border: 1px solid color-mix(in srgb,
+      var(--modern-ui-editor-tab-unfocused-active-hover-background) 80%,
+      var(--vscode-foreground)) !important;
+}
+
+.monaco-editor .view-overlays .current-line {
+  background-color: var(--vscode-editor-lineHighlightBackground) !important;
+  border-radius: 100px !important;
   border: 1px solid color-mix(in srgb,
       var(--modern-ui-editor-tab-unfocused-active-hover-background) 80%,
       var(--vscode-foreground)) !important;
