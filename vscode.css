@@ -206,8 +206,8 @@
   border-radius: 20px !important;
 }
 
-
-.monaco-editor .focused .selected-text {
+.monaco-editor .selected-text {
+  /* background-color: var(--vscode-editor-lineHighlightBackground) !important; */
   border-radius: 20px !important;
   border: 1px solid color-mix(in srgb,
       var(--modern-ui-editor-tab-unfocused-active-hover-background) 50%,
@@ -218,7 +218,7 @@
 .monaco-editor .wordHighlight,
 .monaco-editor .wordHighlightStrong,
 .monaco-editor .wordHighlightText {
-  background-color: transparent !important;
+  background-color: var(--vscode-editor-lineHighlightBackground) !important;
   border-radius: 100px !important;
   border: 1px solid color-mix(in srgb,
       var(--modern-ui-editor-tab-unfocused-active-hover-background) 80%,
