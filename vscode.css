@@ -1,0 +1,201 @@
+* {
+  corner-shape: squircle !important;
+}
+
+.quick-input-widget {
+  border-radius: 20px !important;
+}
+
+.notification-toast {
+  border-radius: 10px !important;
+}
+
+.badge-content {
+  corner-shape: round !important;
+}
+
+.monaco-list,
+.monaco-list-rows {
+  border-radius: 0px !important;
+}
+
+.part.panel .actions-container .action-item .active-item-indicator,
+.monaco-custom-toggle,
+.suggest-input-container,
+.start-debug-action-item,
+.open-in-agents-titlebar-widget,
+.monaco-list-row,
+.monaco-button,
+.monaco-inputbox,
+.action-list-filter-input,
+.scm-editor,
+.agent-status-pill {
+  border-radius: 100px !important;
+}
+
+.notification-toast {
+  border-radius: 10px !important;
+}
+.notifications-list-container .monaco-list-rows,
+.notifications-list-container .notification-list-item,
+.notifications-list-container .monaco-list-row {
+  border-radius: 20px !important;
+}
+
+.monaco-button-dropdown .monaco-button:first-child {
+  border-radius: 0px !important;
+  border-top-left-radius: 100px !important;
+  border-bottom-left-radius: 100px !important;
+}
+
+.monaco-button-dropdown .monaco-button:last-child {
+  border-radius: 0px !important;
+  border-top-right-radius: 100px !important;
+  border-bottom-right-radius: 100px !important;
+}
+
+
+.part.statusbar {
+  background-color: transparent !important;
+}
+
+.part.activitybar {
+  border-top-left-radius: 20px !important;
+  border-bottom-left-radius: 20px !important;
+}
+
+.part.activitybar .action-item {
+  margin-top: 0px !important;
+}
+
+.part.activitybar .action-item a,
+.part.activitybar .action-item a:before {
+  font-size: 18px !important;
+  font-weight: bold !important;
+}
+
+.part.activitybar .action-item .active-item-indicator {
+  /* border-radius: 100px !important; */
+  border-radius: 20px !important;
+}
+
+.part.sidebar {
+  border-top-right-radius: 20px !important;
+  border-bottom-right-radius: 20px !important;
+}
+
+.part.auxiliarybar {
+  border-radius: 20px !important;
+}
+
+.part.panel {
+  border-radius: 20px !important;
+}
+
+.part.editor {
+  border-radius: 20px !important;
+}
+
+.part.statusbar .statusbar-item a {
+  border-radius: 100px !important;
+}
+
+.action-item a {
+  border-radius: 20px !important;
+}
+
+.tabs-container {
+  gap: 2px !important;
+  padding-left: 3px !important;
+}
+
+.tabs-and-actions-container {
+  background-color: transparent !important;
+  border: none !important;
+  padding: 0px !important;
+}
+
+.tabs-and-actions-container .tab-connected-overflow-edge.connected-tab-right-clipped {
+  display: none !important;
+}
+
+.tabs-and-actions-container::after {
+  display: none !important;
+}
+
+.tab:focus {
+  outline: none !important;
+}
+
+.tab .tab-actions {
+  right: 2px !important;
+  background-color: transparent !important;
+}
+
+.tab .tab-actions a {
+  border-radius: 100% !important;
+}
+
+.tab .tab-actions a:active {
+  background-color: transparent !important;
+}
+
+.tab .tab-connected-edge {
+  display: none !important;
+}
+
+.tab .tab-border-bottom-container {
+  display: none !important;
+}
+
+.tab .tab-divider {
+  display: none !important;
+  /* left: -2px !important;
+  background-color: color-mix(in srgb,
+      var(--modern-ui-editor-tab-unfocused-active-hover-background) 85%,
+      var(--vscode-foreground)) !important;*/
+}
+
+.tab .tab-fill {
+  margin-top: 3px !important;
+  border-radius: 100px !important;
+  border: none !important;
+  background-color: transparent !important;
+  height: 26px !important;
+  padding: 0px !important;
+}
+
+.tab .tab-fill::before,
+.tab .tab-fill::after {
+  content: none !important;
+}
+
+
+.tab:not(.active):hover .tab-fill {
+  box-shadow: none !important;
+  background-color: var(--modern-ui-editor-tab-unfocused-active-hover-background) !important;
+  /* border: 1px solid color-mix(in srgb,
+      var(--modern-ui-editor-tab-unfocused-active-hover-background) 95%,
+      var(--vscode-foreground)) !important; */
+}
+
+.tab.active .tab-fill {
+  margin-top: 4px !important;
+  box-shadow: none !important;
+  background-color: var(--modern-ui-tab-active-background) !important;
+  /* border: 1px solid color-mix(in srgb,
+      var(--modern-ui-editor-tab-unfocused-active-hover-background) 90%,
+      var(--vscode-foreground)) !important; */
+}
+
+.vs-dark .tab:not(.active):hover .tab-fill {
+  border: 1px solid color-mix(in srgb,
+      var(--modern-ui-editor-tab-unfocused-active-hover-background) 90%,
+      var(--vscode-foreground)) !important;
+}
+
+.vs-dark .tab.active .tab-fill {
+  border: 1px solid color-mix(in srgb,
+      var(--modern-ui-editor-tab-unfocused-active-hover-background) 80%,
+      var(--vscode-foreground)) !important;
+}
