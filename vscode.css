@@ -14,6 +14,11 @@
   corner-shape: round !important;
 }
 
+.slider,
+.minimap-slider-horizontal {
+  border-radius: 30px !important;
+}
+
 .monaco-list,
 .monaco-list-rows {
   border-radius: 0px !important;
@@ -77,7 +82,6 @@
 }
 
 .part.activitybar .action-item .active-item-indicator {
-  /* border-radius: 100px !important; */
   border-radius: 20px !important;
 }
 
@@ -108,7 +112,7 @@
 
 .tabs-container {
   gap: 2px !important;
-  padding-left: 3px !important;
+  padding-left: 2px !important;
 }
 
 .tabs-and-actions-container {
@@ -130,7 +134,6 @@
 }
 
 .tab .tab-actions {
-  right: 2px !important;
   background-color: transparent !important;
 }
 
@@ -152,19 +155,26 @@
 
 .tab .tab-divider {
   display: none !important;
-  /* left: -2px !important;
-  background-color: color-mix(in srgb,
-      var(--modern-ui-editor-tab-unfocused-active-hover-background) 85%,
-      var(--vscode-foreground)) !important;*/
 }
 
+
 .tab .tab-fill {
-  margin-top: 3px !important;
+  inset: 0px !important;
+  margin-top: 2px !important;
   border-radius: 100px !important;
   border: none !important;
   background-color: transparent !important;
-  height: 26px !important;
-  padding: 0px !important;
+  height: 25px !important;
+}
+
+.tab .tab-actions,
+.tab .monaco-icon-label {
+  margin-top: 2px !important;
+}
+
+.tab .monaco-icon-label::before {
+  font-size: 10px !important;
+  margin-top: 1px !important;
 }
 
 .tab .tab-fill::before,
@@ -172,22 +182,14 @@
   content: none !important;
 }
 
-
 .tab:not(.active):hover .tab-fill {
   box-shadow: none !important;
   background-color: var(--modern-ui-editor-tab-unfocused-active-hover-background) !important;
-  /* border: 1px solid color-mix(in srgb,
-      var(--modern-ui-editor-tab-unfocused-active-hover-background) 95%,
-      var(--vscode-foreground)) !important; */
 }
 
 .tab.active .tab-fill {
-  margin-top: 4px !important;
   box-shadow: none !important;
   background-color: var(--modern-ui-tab-active-background) !important;
-  /* border: 1px solid color-mix(in srgb,
-      var(--modern-ui-editor-tab-unfocused-active-hover-background) 90%,
-      var(--vscode-foreground)) !important; */
 }
 
 .vs-dark .tab:not(.active):hover .tab-fill {
@@ -197,38 +199,39 @@
 }
 
 .vs-dark .tab.active .tab-fill {
-  border: 1px solid color-mix(in srgb,
-      var(--modern-ui-editor-tab-unfocused-active-hover-background) 80%,
-      var(--vscode-foreground)) !important;
+  border: 1px solid color-mix(in srgb, var(--modern-ui-editor-tab-unfocused-active-hover-background) 80%, var(--vscode-foreground)) !important;
 }
 
 .editor-widget.suggest-widget {
   border-radius: 20px !important;
 }
 
-.monaco-editor .selected-text {
-  /* background-color: var(--vscode-editor-lineHighlightBackground) !important; */
+.monaco-editor .selected-text,
+.monaco-editor .focused .selected-text {
+  background-color: color-mix(in srgb, var(--vscode-editor-selectionBackground) 100%, transparent) !important;
+  margin-top: -1px !important;
   border-radius: 20px !important;
   border: 1px solid color-mix(in srgb,
-      var(--modern-ui-editor-tab-unfocused-active-hover-background) 50%,
+      var(--vscode-editor-selectionBackground) 50%,
       var(--vscode-foreground)) !important;
 }
 
-.monaco-editor .selectionHighlight ,
+.monaco-editor .selectionHighlight,
 .monaco-editor .wordHighlight,
 .monaco-editor .wordHighlightStrong,
-.monaco-editor .wordHighlightText {
-  background-color: var(--vscode-editor-lineHighlightBackground) !important;
+.monaco-editor .wordHighlightText,
+.monaco-editor .view-overlays .current-line {
+  background-color: color-mix(in srgb, var(--vscode-foreground) 10%, transparent) !important;
   border-radius: 100px !important;
-  border: 1px solid color-mix(in srgb,
-      var(--modern-ui-editor-tab-unfocused-active-hover-background) 80%,
-      var(--vscode-foreground)) !important;
+  border: 1px solid color-mix(in srgb, var(--vscode-foreground) 20%, transparent) !important;
 }
 
-.monaco-editor .view-overlays .current-line {
-  background-color: var(--vscode-editor-lineHighlightBackground) !important;
+
+.monaco-editor .hoverHighlight {
+  height: 16px !important;
+  background-color: transparent !important;
   border-radius: 100px !important;
   border: 1px solid color-mix(in srgb,
-      var(--modern-ui-editor-tab-unfocused-active-hover-background) 80%,
+      var(--modern-ui-editor-tab-unfocused-active-hover-background) 50%,
       var(--vscode-foreground)) !important;
 }
