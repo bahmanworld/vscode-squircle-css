@@ -24,6 +24,7 @@
   border-radius: 0px !important;
 }
 
+.debug-toolbar,
 .part.panel .actions-container .action-item .active-item-indicator,
 .monaco-custom-toggle,
 .suggest-input-container,
@@ -33,11 +34,14 @@
 .monaco-button,
 .monaco-inputbox,
 .action-list-filter-input,
-.scm-editor,
 .agent-status-pill,
+.scm-editor,
+.scm-editor .monaco-editor,
+.scm-editor .overflow-guard,
 .editor-widget.suggest-widget .monaco-list-rows .monaco-list-row {
   border-radius: 100px !important;
 }
+
 
 .notification-toast {
   border-radius: 10px !important;
@@ -206,14 +210,20 @@
   border-radius: 20px !important;
 }
 
+
 .monaco-editor .selected-text,
 .monaco-editor .focused .selected-text {
   background-color: color-mix(in srgb, var(--vscode-editor-selectionBackground) 100%, transparent) !important;
-  margin-top: -1px !important;
+  /* margin-top: -1px !important; */
   border-radius: 20px !important;
   border: 1px solid color-mix(in srgb,
       var(--vscode-editor-selectionBackground) 50%,
       var(--vscode-foreground)) !important;
+}
+
+/* [INFO] other selected lines styles */
+.monaco-editor .view-overlays>div:has(.selected-text)~div:has(.selected-text) .selected-text {
+  margin-top: -1px !important;
 }
 
 .monaco-editor .selectionHighlight,
@@ -223,7 +233,9 @@
 .monaco-editor .view-overlays .current-line {
   background-color: color-mix(in srgb, var(--vscode-foreground) 10%, transparent) !important;
   border-radius: 100px !important;
-  border: 1px solid color-mix(in srgb, var(--vscode-foreground) 20%, transparent) !important;
+  border: 1px solid color-mix(in srgb,
+      var(--vscode-foreground) 20%,
+      transparent) !important;
 }
 
 
