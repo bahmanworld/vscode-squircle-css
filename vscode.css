@@ -162,16 +162,16 @@
   border-radius: 100px !important;
   border: none !important;
   background-color: transparent !important;
-  height: 25px !important;
+  height: 27px !important;
   align-items: center !important;
 }
 
 .tab .tab-actions {
-  margin-top: -2px !important;
+  margin-top: 0px !important;
 }
 
 .tab .monaco-icon-label {
-  margin-top: 2px !important;
+  margin-top: 3px !important;
 }
 
 .tab .monaco-icon-label::before {
