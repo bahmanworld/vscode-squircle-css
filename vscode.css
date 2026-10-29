@@ -79,12 +79,6 @@
   margin-top: 0px !important;
 }
 
-.part.activitybar .action-item a,
-.part.activitybar .action-item a:before {
-  font-size: 18px !important;
-  font-weight: bold !important;
-}
-
 .part.activitybar .action-item .active-item-indicator {
   border-radius: 20px !important;
 }
@@ -169,9 +163,13 @@
   border: none !important;
   background-color: transparent !important;
   height: 25px !important;
+  align-items: center !important;
 }
 
-.tab .tab-actions,
+.tab .tab-actions {
+  margin-top: -2px !important;
+}
+
 .tab .monaco-icon-label {
   margin-top: 2px !important;
 }
